@@ -1,0 +1,74 @@
+{
+  "run_at": "2026-09-11T09:16:47Z",
+  "repos": {
+    "Gabson0x/bountyforge": {
+      "stars": 410,
+      "description": "All-round bug bounty skill for Claude Code  parallelized agents for smart contract audits (EVM, Move, Solana, TRON), web/API security, and submission-ready repo",
+      "license": "unknown",
+      "branch": "main",
+      "html_url": "https://github.com/Gabson0x/bountyforge",
+      "skills": 1
+    },
+    "SnailSploit/Claude-Red": {
+      "stars": 3205,
+      "description": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude ",
+      "license": "MIT",
+      "branch": "main",
+      "html_url": "https://github.com/SnailSploit/Claude-Red",
+      "skills": 78
+    },
+    "elementalsouls/Claude-OSINT": {
+      "stars": 2588,
+      "description": "8 Claude skills \u00b7 100+ recon capabilities \u00b7 80 secret-regex patterns \u00b7 80+ dorks \u00b7 9 read-only credential validators \u00b7 27 attack-path templates \u00b7 ~10,000 lines ",
+      "license": "MIT",
+      "branch": "main",
+      "html_url": "https://github.com/elementalsouls/Claude-OSINT",
+      "skills": 10
+    },
+    "Aetherdz/huntpack": {
+      "stars": 3,
+      "description": "Method-first bug bounty skills for AI agents \u2014 a compact 12-skill, 6-stage hunting pipeline that works on any Agent Skills-standard tool (Claude Code, OpenCode,",
+      "license": "MIT",
+      "branch": "main",
+      "html_url": "https://github.com/Aetherdz/huntpack",
+      "skills": 12
+    },
+    "murraywu/Bug-Bounty-Skills": {
+      "stars": 0,
+      "description": "Bug Bounty Skill Pack - 10 OpenClaw Security Tools for Web Vulnerability Learning and Bug Bounty Hunting",
+      "license": "unknown",
+      "branch": "main",
+      "html_url": "https://github.com/murraywu/Bug-Bounty-Skills",
+      "skills": 10
+    },
+    "anthropics/skills": {
+      "stars": 175745,
+      "description": "Public repository for Agent Skills",
+      "license": "unknown",
+      "branch": "main",
+      "html_url": "https://github.com/anthropics/skills",
+      "skills": 20
+    },
+    "alirezarezvani/claude-skills": {
+      "stars": 25829,
+      "description": "380 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 380+ skills, customizable references, scripts)for Claude Code, Codex, Gemini C",
+      "license": "MIT",
+      "branch": "main",
+      "html_url": "https://github.com/alirezarezvani/claude-skills",
+      "skills": 843
+    },
+    "Jeffallan/claude-skills": {
+      "stars": 11414,
+      "description": "67 Specialized Skills for Full-Stack Developers. Transform Claude Code into your expert pair programmer.",
+      "license": "MIT",
+      "branch": "main",
+      "html_url": "https://github.com/Jeffallan/claude-skills",
+      "skills": 67
+    }
+  },
+  "totals": {
+    "skills": 1041,
+    "files_downloaded": 1053,
+    "repos": 8
+  }
+}

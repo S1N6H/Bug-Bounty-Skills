@@ -1,0 +1,1 @@
+../../../engineering/skills/skill-tester/assets/sample-skill/SKILL.md

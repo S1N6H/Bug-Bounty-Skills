@@ -37,8 +37,8 @@ if TOKEN:
     HEADERS["Authorization"] = f"Bearer {TOKEN}"
 
 # Safety caps so one runaway repo can't blow up the daily run.
-MAX_FILES_PER_REPO = 300
-MAX_TOTAL_FILES = 2500
+MAX_FILES_PER_REPO = 1000
+MAX_TOTAL_FILES = 3000
 MAX_BYTES_PER_FILE = 1_000_000
 
 
@@ -144,24 +144,29 @@ def main() -> int:
             entries.append((repo, path, name, f"https://github.com/{repo}/blob/{stats['repos'][repo]['branch']}/{path}", sha))
             merged.append((repo, path, name, f"https://github.com/{repo}/blob/{stats['repos'][repo]['branch']}/{path}", content.decode("utf-8", errors="replace")))
 
+    # ---- per-repo skill counts (used by ALL-SKILLS.md, SOURCES.md, stats) ----
+    per_repo_counts = {}
+    for repo, _, _, _, _ in entries:
+        per_repo_counts[repo] = per_repo_counts.get(repo, 0) + 1
+    for repo, count in per_repo_counts.items():
+        stats["repos"][repo]["skills"] = count
+
     # ---- ALL-SKILLS.md -------------------------------------------------
     print(f"writing {ALL_SKILLS_FILE} ({len(merged)} skills)", flush=True)
     with open(ALL_SKILLS_FILE, "w", encoding="utf-8") as f:
         f.write("# Bug Bounty Skills — Merged Library\n\n")
         f.write(f"> Auto-generated {stats['run_at']} · {len(merged)} skills · "
                 f"{len(repos)} source repositories · regenerated daily by GitHub Actions.\n\n")
-        f.write("Each section links back to the exact source file.\n\n---\n\n")
+        f.write("Each section links back to the exact source file. "
+                "GitHub renders a full table of contents via the ☰ menu above.\n\n")
+        f.write("| Source repository | Skills collected |\n|---|---|\n")
+        for repo in repos:
+            f.write(f"| {repo} | {per_repo_counts.get(repo, 0)} |\n")
+        f.write("\n---\n\n")
         for repo, path, name, url, content in merged:
             f.write(f"## {name} — `{repo}/{path}`\n\n")
             f.write(f"**Source:** {repo}/{path}\n\n")
             f.write(content.rstrip() + "\n\n---\n\n")
-
-    # ---- per-repo skill counts (used by SOURCES.md and stats.json) ------
-    per_repo_counts = {}
-    for repo, _, _, _, _ in entries:
-        per_repo_counts[repo] = per_repo_counts.get(repo, 0) + 1
-    for repo, count in per_repo_counts.items():
-        stats["repos"][repo]["skills"] = count
 
     # ---- SOURCES.md (credits) ------------------------------------------
     print(f"writing {SOURCES_MD_FILE}", flush=True)

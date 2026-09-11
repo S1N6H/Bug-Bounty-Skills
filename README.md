@@ -62,7 +62,6 @@ These skills were written by third parties for **authorized** security testing �
 | **Jeffallan/claude-skills** — ⭐ 11,413 | 67 specialized skills for full-stack developers |
 | **Aetherdz/huntpack** — ⭐ 3 | Method-first hunting: a compact 12-skill, 6-stage bug bounty pipeline |
 | **murraywu/Bug-Bounty-Skills** — ⭐ 0 | Bug bounty skill pack of 10 security tools for web vulnerability hunting |
-| **VoltAgent/awesome-openclaw-skills** — ⭐ 52,495 | 5,400+ skills filtered and categorized from the community |
 
 *Star counts and per-repo skill totals refresh automatically every run — see `SOURCES.md` and `stats.json` for live numbers.*
 

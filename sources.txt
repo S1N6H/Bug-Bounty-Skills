@@ -13,4 +13,3 @@ murraywu/Bug-Bounty-Skills
 anthropics/skills
 alirezarezvani/claude-skills
 Jeffallan/claude-skills
-VoltAgent/awesome-openclaw-skills
