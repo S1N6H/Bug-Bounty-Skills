@@ -1,6 +1,6 @@
 # Bug Bounty Skills — Merged Library
 
-> Auto-generated 2026-09-11T09:16:47Z · 1041 skills · 8 source repositories · regenerated daily by GitHub Actions.
+> Auto-generated 2026-09-11T09:36:12Z · 1041 skills · 8 source repositories · regenerated daily by GitHub Actions.
 
 Each section links back to the exact source file. GitHub renders a full table of contents via the ☰ menu above.
 

@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-09-11T09:16:47Z",
+  "run_at": "2026-09-11T09:36:12Z",
   "repos": {
     "Gabson0x/bountyforge": {
       "stars": 410,
@@ -10,7 +10,7 @@
       "skills": 1
     },
     "SnailSploit/Claude-Red": {
-      "stars": 3205,
+      "stars": 3208,
       "description": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude ",
       "license": "MIT",
       "branch": "main",
@@ -42,7 +42,7 @@
       "skills": 10
     },
     "anthropics/skills": {
-      "stars": 175745,
+      "stars": 175748,
       "description": "Public repository for Agent Skills",
       "license": "unknown",
       "branch": "main",
