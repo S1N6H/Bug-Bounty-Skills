@@ -1,6 +1,7 @@
 # Source repositories — one owner/repo per line.
 # Lines starting with # are ignored. The daily workflow harvests every SKILL.md
-# from each repo below. Add a repo here and it joins the next run.
+# from each repo below into the flat skills/ folder. Add a repo and it joins
+# the next run.
 
 # --- Bug bounty / offensive security skill packs ---
 Gabson0x/bountyforge
@@ -8,8 +9,18 @@ SnailSploit/Claude-Red
 elementalsouls/Claude-OSINT
 Aetherdz/huntpack
 murraywu/Bug-Bounty-Skills
+vigilantshield/Claude-HunterKit
+akashrpatil/awesome-offensive-security-skills
+killvxk/malskills-zh
+0x002132/skills-bugbounty
+ctahok/hermes-bug-bounty-skills
+RajChowdhury240/AD-Red-Teaming-Claude-Skill
+WolzenGeorgi/claude-skills-pentest
 
 # --- Large general skill collections (include security/recon skills) ---
 anthropics/skills
 alirezarezvani/claude-skills
 Jeffallan/claude-skills
+davepoon/buildwithclaude
+mrgoonie/claudekit-skills
+kyssta-exe/skills
