@@ -220,11 +220,11 @@ window.$docsify = {
 };
 ```
 
-If the repo is `kyssta-exe/casualbans`, `basePath` must be `/casualbans/`. If the repo is `MyOrg/MyPlugin`, `basePath` must be `/MyPlugin/`. A mismatch causes all page links to 404.
+If the repo is `okyssta/casualbans`, `basePath` must be `/casualbans/`. If the repo is `MyOrg/MyPlugin`, `basePath` must be `/MyPlugin/`. A mismatch causes all page links to 404.
 
 ### 4c. Multi-Location URL Verification
 
-When a project's GitHub username or repo name changes (e.g. `Kyssta/CasualBans` → `kyssta-exe/casualbans`), documentation links exist in MANY locations. Run a search-and-replace across:
+When a project's GitHub username or repo name changes (e.g. `Kyssta/CasualBans` → `okyssta/casualbans`), documentation links exist in MANY locations. Run a search-and-replace across:
 
 - `docs/index.html` — repo link, favicon URL, `basePath`
 - `docs/_coverpage.md` — GitHub link

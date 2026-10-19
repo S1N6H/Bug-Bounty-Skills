@@ -22,7 +22,7 @@ Ariadne is a local-first AI agent memory system with hybrid search (FAISS vector
 pip install "ariadne-memory[embeddings]"
 
 # Install Hermes plugin
-git clone https://github.com/kyssta-exe/Ariadne.git /tmp/ariadne
+git clone https://github.com/okyssta/Ariadne.git /tmp/ariadne
 cp -r /tmp/ariadne/plugin ~/.hermes/plugins/ariadne
 
 # Enable plugin
@@ -160,4 +160,4 @@ mem.maintenance()  # evict, consolidate, prune, purge_deleted
 
 - Docs: https://ariadne.mantes.net
 - Hermes guide: https://ariadne.mantes.net/guide/hermes
-- GitHub: https://github.com/kyssta-exe/Ariadne
+- GitHub: https://github.com/okyssta/Ariadne

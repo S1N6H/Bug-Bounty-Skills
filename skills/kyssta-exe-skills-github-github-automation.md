@@ -312,8 +312,8 @@ The AUTO-FIX-BUGS cronjob runs every 90 minutes against `NousResearch/hermes-age
    - Open PRs that reference it (scans up to 200 open PRs)
    - Our own `created_prs.json` cache (issues already fixed in previous runs)
    - Whether the issue itself is already closed
-   - **Title-based dedup** (`get_kyssta_open_prs()` + `title_overlaps()`): Fetches all open PRs by `kyssta-exe` and checks word-level overlap (≥60%) against each candidate's title/body. Catches duplicates with no issue number — same CVE bump, same temp-file fix, same config bridge. Runs after other dedup so issue-linked duplicates are caught first.
-   - **Closed-PR check**: Before marking a candidate "new", runs `gh pr list --author kyssta-exe --state all --search "#ISSUE_NUMBER"` to see if the same user already submitted a PR (even closed/unmerged) for that issue. Prevents re-creating a fix whose PR was closed without merge.
+   - **Title-based dedup** (`get_kyssta_open_prs()` + `title_overlaps()`): Fetches all open PRs by `okyssta` and checks word-level overlap (≥60%) against each candidate's title/body. Catches duplicates with no issue number — same CVE bump, same temp-file fix, same config bridge. Runs after other dedup so issue-linked duplicates are caught first.
+   - **Closed-PR check**: Before marking a candidate "new", runs `gh pr list --author okyssta --state all --search "#ISSUE_NUMBER"` to see if the same user already submitted a PR (even closed/unmerged) for that issue. Prevents re-creating a fix whose PR was closed without merge.
 
 3. **Output** top N new candidates via stdout and `/tmp/bug_candidates.json` (default: `20`)
 

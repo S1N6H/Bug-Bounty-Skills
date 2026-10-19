@@ -42,7 +42,7 @@ pip install "ariadne-memory[embeddings]"
 
 ```bash
 # Clone repo and copy plugin
-git clone https://github.com/kyssta-exe/Ariadne.git /tmp/ariadne-repo
+git clone https://github.com/okyssta/Ariadne.git /tmp/ariadne-repo
 cp -r /tmp/ariadne-repo/plugin ~/.hermes/plugins/ariadne
 ```
 
@@ -284,5 +284,5 @@ When asked to make Ariadne stronger while preserving its core promise — local-
 - **API Reference**: https://ariadne.mantes.net/api/
 - **Benchmarks**: https://ariadne.mantes.net/benchmarks
 - **Improvement Roadmap**: `references/ariadne-improvement-roadmap.md`
-- **Source**: https://github.com/kyssta-exe/Ariadne
-- **Changelog**: https://github.com/kyssta-exe/Ariadne/blob/main/CHANGELOG.md
+- **Source**: https://github.com/okyssta/Ariadne
+- **Changelog**: https://github.com/okyssta/Ariadne/blob/main/CHANGELOG.md
